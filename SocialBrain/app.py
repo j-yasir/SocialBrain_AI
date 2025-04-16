@@ -48,7 +48,7 @@ if st.button("Generate Posts"):
                     st.write(f"Image Prompt: {image_prompt}")
 
                     img_url = image_generation.generate_image(image_prompt, size="1024x1024", quality="standard", n=1)
-                    st.image(img_url, caption="", use_column_width=True)
+                    st.image(img_url, caption="", use_container_width=True)
         else:
             st.error("Failed to retrieve trending keywords.")
     else:
